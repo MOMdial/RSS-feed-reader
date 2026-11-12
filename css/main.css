@@ -1,0 +1,164 @@
+@import url("reset.css");
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.root {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 300px 1fr;
+}
+.header {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    border-bottom: 1px solid rgb(152, 148, 148);
+}
+.navbar {
+    grid-column: 1/2;
+    grid-row: 2/-1;
+    border-right: 1px solid rgb(152, 148, 148);
+}
+.main {
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+}
+.header-tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgb(152, 148, 148);
+    margin-bottom: 0.2rem;
+}
+.header-tools .text {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+.header-tools .text h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.header-tools .text span {
+    font-size: 0.8rem;
+    color: rgb(123, 120, 120);
+    font-weight: 600;
+}
+.header-tools .btn button {
+    padding: 0 1rem;
+    color: rgb(123, 120, 120);
+    background-color: transparent;
+    border-color: rgb(123, 120, 120);
+    border-radius: 1rem;
+    border: 1px solid;
+}
+.item {
+    display: flex;
+    padding: 2rem;
+}
+.para {
+    background-color: rgba(166, 185, 231,0.3);
+    border: 1px solid rgb(152, 148, 148);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+.para p {
+    color: rgb(82, 152, 226);
+}
+.blocs {
+    display: flex;
+    flex-direction: column;
+}
+.blocs h3 {
+    color: rgb(123, 120, 120);
+    font-size: 0.8rem;
+    margin: 1rem 0 0 1rem;
+}
+.bloc-item {
+    border-bottom: 1px solid rgb(152, 148, 148);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.small-text {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    
+}
+.small-text span {
+    color: rgb(201, 197, 197);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.small-text .red {
+    background-color: red;
+    padding: 0rem 0.3rem;
+    border-radius: 0.2rem;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.small-text .red::before {
+    content: ".";
+    color: red;
+}
+.small-text .orange {
+    background-color: rgb(241, 106, 15);
+    padding: 0rem 0.3rem;
+    border-radius: 0.2rem;
+    color: white;
+    text-align: center;
+}
+.small-text .black {
+    background-color: rgb(8, 5, 5);
+    padding: 0rem 0.3rem;
+    border-radius: 0.2rem;
+    color: white;
+    text-align: center;
+}
+.small-text .violet {
+    background-color: rgb(165, 20, 244);
+    padding: 0rem 0.3rem;
+    border-radius: 0.2rem;
+    color: white;
+    text-align: center;
+}
+.bloc-item h2 {
+    font-size: 1.2rem;
+}
+.bloc-item p {
+    font-size: 1rem;
+    color: rgb(201, 197, 197);
+    font-weight: 700;
+}
+.bloc-item button {
+    padding: 0rem 0.2rem;
+    border-radius: 0.2rem;
+    border: none;
+    font-size: 0.8rem;
+}
+button.pink {
+    color: rgb(205, 91, 110);
+    background-color: pink;
+}
+button.yellow {
+    background-color: yellow;
+    color: maroon;
+}
+button.violet {
+    color: blueviolet;
+    background-color: rgb(226, 221, 226);
+}
+button.blue {
+    color: rgb(11, 57, 142);
+    background-color: rgba(143, 196, 240,0.4);
+}
