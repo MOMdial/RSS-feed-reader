@@ -16,6 +16,91 @@ body {
     grid-column: 1/-1;
     grid-row: 1/2;
     border-bottom: 1px solid rgb(152, 148, 148);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.header .logo-left {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.header .logo-left svg {
+    border-radius: 0.5rem;
+}
+.header .logo-left h1 {
+    font-weight: bold;
+}
+.header .header-left {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    
+}
+.header-left ul {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.header-left ul li {
+    list-style-type: none;
+}
+.header-left ul li a {
+    text-decoration: none;
+    color: rgb(152, 148, 148);
+    padding: 0.5rem;
+}
+.header-left ul li a:hover {
+    background-color: rgba(152, 148, 148,0.1);
+    color: black;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    
+}
+.header-right {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.header-right label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(152, 148, 148);
+    padding: 0.3rem 1rem;
+}
+.header-right label .barre-oblique {
+    padding: 0rem 0.3rem;
+    border: 1px solid rgb(152, 148, 148);
+    border-radius: 0.3rem;
+    background-color: white;
+}
+.header-right input { 
+    border: none;
+}
+.header-right input::placeholder {
+    color: rgba(152, 148, 148,0.5);
+    font-size: 1.2rem;
+}
+.header-right input:focus { 
+    outline: none;
+}
+.header-right .plus {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid rgb(152, 148, 148);
+    background-color: white;
+    box-shadow: 1px 0px 2px black;
+}
+.MS {
+    background: linear-gradient(blue,violet);
+    border-radius:50%;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1rem;
 }
 .navbar {
     grid-column: 1/2;
